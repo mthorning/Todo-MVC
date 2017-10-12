@@ -4,9 +4,9 @@ var TodoList = Backbone.Collection.extend({
 
 	model: app.Todo,
 
-	localStorage: new Backbone.LocalStorage('todo-backbone'),
+	localStorage: new Backbone.LocalStorage('todos-backbone'),
 
-	complete: function() {
+	completed: function() {
 		return this.filter(function(todo) {
 			return todo.get('completed');
 		});
