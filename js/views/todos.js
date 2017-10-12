@@ -10,7 +10,7 @@ app.TodoView = Backbone.View.extend({
 	events: {
 		'dblclick label': 'edit',
 		'keypress. edit': 'updateOnEnter',
-		'blur .edit': 'close'
+		'blur #edit': 'close'
 	},
 
 	initialize: function() {
@@ -19,7 +19,7 @@ app.TodoView = Backbone.View.extend({
 
 	render: function() {
 		this.$el.html(this.template(this.model.attributes));
-		this.$input = this.$('.edit');
+		this.$input = this.$('#edit');
 		return this;
 	},
 

@@ -9,10 +9,10 @@
 <body>
 
     <section id="todoapp">
-    <header id="header">
-      <h1>todos</h1>
-      <input id="new-todo" placeholder="What needs to be done?" autofocus>
-    </header>
+      <header id="header">
+        <h1>Todos</h1>
+        <input id="new-todo" placeholder="What needs to be done?" autofocus>
+      </header>
     <section id="main">
       <input id="toggle-all" type="checkbox">
       <label for="toggle-all">Mark all as complete</label>
@@ -35,11 +35,11 @@
     <input class="edit" value="<%= title %>">
   </script>
 
-  <script type="text/template" id="stats_template">
+  <script type="text/template" id="stats-template">
     <span id="todo-count"><strong><%= remaining %></strong> <%= remaining === 1 ? 'item' : 'items' %> left</span>
     <ul id="filters">
       <li>
-        <a class="selected" href="#/">All</a>
+        <a id="selected" href="#/">All</a>
       </li>
       <li>
         <a href="#/active">Active</a>
@@ -56,7 +56,7 @@
   <script src="node_modules/jquery/dist/jquery.js"></script>
   <script src="node_modules/underscore/underscore.js"></script>
   <script src="node_modules/backbone/backbone.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.16/backbone.localStorage-min.js"></script>
+  <script src="node_modules/backbone.localstorage/backbone.localstorage.js"></script>
 
   <script src="js/models/todo.js"></script>
   <script src="js/collections/todos.js"></script>
