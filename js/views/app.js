@@ -26,7 +26,7 @@ app.AppView = Backbone.View.extend({
 		this.listenTo(app.Todos, 'filter', this.filterAll);
 		this.listenTo(app.Todos, 'all', this.render);
 
-		app.Todos.fetch();
+		app.Todos.fetch({ reset: true });
 	},
 
 	render: function() {
@@ -100,7 +100,7 @@ app.AppView = Backbone.View.extend({
 
 		app.Todos.each(function(todo) {
 			todo.save({
-				'completed': completed
+				completed : completed
 			});
 		});
 	}
