@@ -9,7 +9,7 @@ app.AppView = Backbone.View.extend({
 
 	events: {
 		'keypress #new-todo': 'createOnEnter',
-		'click #clear-completed': 'clearCompleted',
+		'click .clear-completed': 'clearCompleted',
 		'click #toggle-all': 'toggleAllComplete'
 	},
 
