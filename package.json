@@ -1,0 +1,24 @@
+{
+  "name": "todo-mvc",
+  "version": "1.0.0",
+  "description": "todo-mvs exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mthorning/Todo-MVC.git"
+  },
+  "author": "matt thorning",
+  "license": "MTT",
+  "bugs": {
+    "url": "https://github.com/mthorning/Todo-MVC/issues"
+  },
+  "homepage": "https://github.com/mthorning/Todo-MVC#readme",
+  "dependencies": {
+    "backbone": "^1.3.3",
+    "backbone.localstorage": "^2.0.2",
+    "jquery": "^3.2.1"
+  }
+}
